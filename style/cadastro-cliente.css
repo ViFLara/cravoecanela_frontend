@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#6b1f1c;
+}
+
+body {
+    height: 200vh;
+    background: linear-gradient(to top, #c4a96a, 
+    #efebdf);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 200px 50px 200px;
+}
+header div img{
+    width: 10%;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cadastro-cliente{
+    max-width: 800px;
+    max-height: 100%;
+    background: #ffffffd9;
+    margin: 0px auto 10px auto;
+    border-radius: 5px;
+}
+
+form {
+    padding: 30px;
+}
+
+form div{ 
+    padding: 10px;
+}
+
+form label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  font-size: inherit;
+}
+
+form div input,
+form select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  margin-bottom: 3px;
+}
+
+
+
+form input, select{
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: #464646;
+
+}
+
+form #enviar{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #e3cd8a;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #6b1f1c;
+}
+
+form #enviar:hover{
+    width: 100%;
+    color: #fbf4f4;
+    background-color: #cbb77b;
+}
+
+.endereco{
+    margin-top: 30px;
+
+}
