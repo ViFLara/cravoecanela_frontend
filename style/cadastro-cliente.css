@@ -22,6 +22,7 @@ header{
     padding: 10px;
     margin: 0 200px 50px 200px;
 }
+
 header div img{
     width: 10%;
 }
@@ -33,7 +34,6 @@ header ul{
 header ul li {
     padding: 10px;
 }
-
 
 ul {
     list-style: none;
@@ -71,6 +71,22 @@ select {
   font-size: inherit;
 }
 
+input:focus::-webkit-input-placeholder {
+color: transparent;
+}
+
+input:focus:-moz-placeholder { /* Firefox 18- */
+color: transparent;  
+}
+
+input:focus::-moz-placeholder {  /* Firefox 19+ */
+color: transparent;  
+}
+
+input:focus:-ms-input-placeholder {  
+color: transparent;  
+}
+
 form div input,
 form select {
   width: 100%;
@@ -80,17 +96,15 @@ form select {
   margin-bottom: 3px;
 }
 
-
-
 form input, select{
     width: 100%;
     padding: 5px 5px;
     border-radius: 5px;
     color: #464646;
-
 }
 
 form #enviar{
+    font-size: 20px;
     width: 100%;
     padding: 10px 10px;
     background-color: #e3cd8a;
@@ -109,5 +123,47 @@ form #enviar:hover{
 
 .endereco{
     margin-top: 30px;
+}
 
+@media only screen and (max-width: 1200px) {
+    header{
+        margin: auto;
+    }
+    
+    header div img{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    header{
+        margin: auto;
+    }
+    
+    header div img{
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    header{
+        margin: auto;
+    }
+        
+    header div img{
+        width: 18%;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    header{
+        margin: auto;
+    }
+    
+    header div img{
+        width: 25%;
+    }
+   
 }
