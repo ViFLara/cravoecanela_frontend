@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/cravoecanela.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/consulta-cliente.css">
+    <title>Cravo&Canela</title>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela">
+        </div>
+        <!-- <div id="div-busca">
+            <input type="text" id="txt-busca" placeholder="Buscar cliente por CPF"/>
+            <button onclick="" id="btn-busca" type="button"><img src="images/pesquisa-de-lupa.png" id="btn-busca" alt="Buscar"/></button>              
+        </div> -->
+        <ul>
+            <li>
+              <a href="cadastro-cliente.html" target="_blank">               
+                <img title="Cadastrar Novo Cliente" class="icones" src="images/adicionar-pessoas.png" alt="ícone de pessoa com sinal de mais, que permite adicionar mais clientes"></a>
+            </li>
+            <li>
+                <a class="icones" href="consulta-cliente.html" target="_blank">
+                <img title="Consultar Clientes" src="images/listar-pessoas.png" alt="ícone de grupo de pessoas que direciona para a página de consulta de clientes"></a>
+            </li>
+            <li>
+                <a class="icones" href="consulta-transacao.html" target="_blank">
+                <img  title="Consultar Transações" src="images/lista-de-controle.png" alt="ícone de checklist de compras que direciona para a pagina para consulta das transações dos clientes"></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="lista-cliente">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Data Nascimento</th>
+                        <th scope="col">Genêro</th>
+                        <th scope="col">Estado Civil</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">CEP</th>
+                        <th scope="col">Logradouro</th>
+                        <th scope="col">Número</th>
+                        <th scope="col">Complemento</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">País</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Excluir</th>
+                      </tr>
+                    </thead>
+                    <tbody id="linha">
+                      <tr>
+                        <td><output id="nome"></output></td>
+                        <td><output id="cpf"></output></td>
+                        <td><output id="dt-nasc"></output></td>
+                        <td><output id="genero"></output>                         
+                        </td> 
+                        <td><output id="estado-civil"></output></td>                        
+                        <td><output id="email"></output></td> 
+                        <td><output id="telefone"></output></td>
+                        <td><output id="cep"></output></td> 
+                        <td><output id="logradouro"></output></td>
+                        <td><output id="numero"></output></td>
+                        <td><output id="complemento"></output></td> 
+                        <td><output id="bairro"></output></td> 
+                        <td><output id="estado"></output></td>
+                        <td><output id="cidade"></output></td> 
+                        <td><output id="pais"></output></td>                                
+                        <td><button onclick="" type="button" ><img title="Editar"    src="images/lapis.png" alt="Botão para editar cliente"></button></td>
+                        <td><button onclick="" type="button" ><img title="Excluir" src="images/lixeira-de-reciclagem.png" alt="Botão para excluir cliente"></button></td>
+                      </tr>
+                  </table>
+        </section>
+    </main>
 </body>
 </html>
