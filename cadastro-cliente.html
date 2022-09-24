@@ -53,7 +53,7 @@
                         <option value="mas-trans">Homem Transgênero</option>
                         <option value="nao-binario">Não Binário</option>
                         <option value="outros">Outros</option>
-                      </select>
+                    </select>
                 </div>
                 <div>
                     <label for="estado-civil">Estado Civil:</label><br>
@@ -74,10 +74,21 @@
                     <label for="telefone">Telefone principal:</label><br>
                     <input type="tel" id="telefone" name="telefone" value="" placeholder="DDD + Número de telefone" required>
                 </div>
-
+                <div>
+                    <label for="profissao">Profissão:</label><br>
+                    <input type="text" id="profissao" name="profissao" value="" placeholder="Profissao" required>
+                </div>
                 <div>
                     <label for="cep">CEP:</label>
                      <input type="text" id="cep" name="cep" value="" placeholder="CEP/Código postal" required                onblur="pesquisacep(this.value);">
+                </div>
+                <div>
+                    <label for="tipo_enderco">Tipo de Endereço:</label><br>
+                    <select id="estado-civil" name="estado-civil">
+                        <option value="residencial">Residencial</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="outros">Outros</option>
+                    </select>
                 </div>
                 <div>
                     <label for="logradouro">Logradouro:</label><br>
