@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/sub-style.css" />
+    <link rel="stylesheet" href="style/modal.css" />
+    <title>Beautify - Home</title>
+  </head>
+
+  <body>
+    <nav class="nav-desktop">
+      <div class="social-links-desktop">
+        <a class="user-icon" target="_blank">
+          <div class="user-icon"></div>
+        </a>
+      </div>
+      <ul>
+        <li><a class="home-link" href="cadastro-cliente.html">Cadastro</a></li>
+        <li>
+          <a class="looks-link" href="consulta-cliente.html"
+            >Consulta Clientes</a
+          >
+        </li>
+        <li>
+          <a class="products-link" href="consulta-transacao.html">Transações</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="home-container">
+      <div class="menu-btn"></div>
+      <div class="home-itens">
+        <div class="img-container">
+          <img src="./images/logo-cravoecanela.png" alt="Cravo e Canela" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Mobile -->
+    <div class="container modal" id="menu-modal">
+      <div class="modal-container">
+        <div class="close-btn"></div>
+        <nav class="nav-mobile">
+          <ul>
+            <li>
+              <a class="home-link" href="cadastro-cliente.html">Cadastro</a>
+            </li>
+            <li>
+              <a class="looks-link" href="consulta-cliente.html"
+                >Consulta Clientes</a
+              >
+            </li>
+            <li>
+              <a class="products-link" href="consulta-transacao.html"
+                >Transações</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- END of Menu Mobile -->
+
+    <!-- Login Modal -->
+    <div class="container modal" id="login-modal">
+      <div class="modal-container">
+        <div class="modal-content">
+          <h3>Log in</h3>
+          <form action="#">
+            <div class="input-outer">
+              <div class="email-icon input-icon"></div>
+              <input
+                type="text"
+                name="login-email"
+                id="login-email"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="input-outer">
+              <div class="password-icon input-icon"></div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+          <div class="separator"></div>
+        </div>
+      </div>
+    </div>
+    <!--END of Login Modal -->
+
+    <script src="./script/main.js"></script>
+  </body>
 </html>
