@@ -13,7 +13,6 @@
         <div>
             <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela">
         </div>
-
         <ul>
             <li>
               <a href="cadastro-cliente.html">               
@@ -41,30 +40,30 @@
                     <input type="text" id="cpf" name="cpf" value="" placeholder="Cadastro de Pessoas Física" required>
                 </div>
                 <div>
-                    <label for="dt-nasc">Data de Nascimento:</label><br>
-                    <input type="text" id="dt-nasc" name="dt-nasc" value="" placeholder="O ano em que nasceu. (Exemplo 01/01/1980)" required>
+                    <label for="dataNascimento">Data de Nascimento:</label><br>
+                    <input type="text" id="dataNascimento" name="dataNascimento" value="" placeholder="O ano em que nasceu. (Exemplo 01/01/1980)" required>
                 </div>
                 <div>
                     <label for="genero">Genêro:</label><br>
                     <select id="genero" name="genero">
-                        <option value="fem-cis">Mulher Cisgênero</option>
-                        <option value="fem-trans">Mulher Transgênero</option>
-                        <option value="mas-cis">Homem Cisgênero</option>
-                        <option value="mas-trans">Homem Transgênero</option>
-                        <option value="nao-binario">Não Binário</option>
-                        <option value="outros">Outros</option>
+                        <option value="FEMCIS">Mulher Cisgênero</option>
+                        <option value="FEMTRANS">Mulher Transgênero</option>
+                        <option value="MASCIS">Homem Cisgênero</option>
+                        <option value="MASTRANS">Homem Transgênero</option>
+                        <option value="NAOBINARIO">Não Binário</option>
+                        <option value="OUTROS">Outros</option>
                     </select>
                 </div>
                 <div>
-                    <label for="estado-civil">Estado Civil:</label><br>
-                    <select id="estado-civil" name="estado-civil">
-                        <option value="casado">Casado(a)</option>
-                        <option value="solteiro">Solteiro(a)</option>
-                        <option value="divorcidado">Divorciado(a)</option>
-                        <option value="viuvo">Viúvo(a)</option>
-                        <option value="uniao-estavel">União Estável</option>
-                        <option value="outros">Outros</option>
-                      </select>
+                    <label for="estadoCivil">Estado Civil:</label><br>
+                    <select id="estadoCivil" name="estadoCivil">
+                        <option value="CASADO">Casado(a)</option>
+                        <option value="SOLTEIRO">Solteiro(a)</option>
+                        <option value="DIVORCIADO">Divorciado(a)</option>
+                        <option value="VIUVO">Viúvo(a)</option>
+                        <option value="UNIAOESTAVEL">União Estável</option>
+                        <option value="OUTROS">Outros</option>
+                    </select>
                 </div>
                 <div>
                     <label for="email">E-mail:</label><br>
@@ -83,11 +82,11 @@
                      <input type="text" id="cep" name="cep" value="" placeholder="CEP/Código postal" required                onblur="pesquisacep(this.value);">
                 </div>
                 <div>
-                    <label for="tipo_enderco">Tipo de Endereço:</label><br>
-                    <select id="estado-civil" name="estado-civil">
-                        <option value="residencial">Residencial</option>
-                        <option value="comercial">Comercial</option>
-                        <option value="outros">Outros</option>
+                    <label for="tipo">Tipo de Endereço:</label><br>
+                    <select id="tipo" name="tipo">
+                        <option value="RESIDENCIAL">Residencial</option>
+                        <option value="COMERCIAL">Comercial</option>
+                        <option value="OUTROS">Outros</option>
                     </select>
                 </div>
                 <div>
