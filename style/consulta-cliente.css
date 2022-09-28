@@ -85,6 +85,11 @@ th {
     text-align: center;
 }
 
+td {
+    text-align: center;
+}
+
+
 .botao {
     width: 50px;
 }

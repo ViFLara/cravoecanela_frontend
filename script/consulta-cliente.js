@@ -79,12 +79,14 @@ function criaTabela(){
                 <td>${cliente.id}</td>
                 <td>${cliente.nome}</td>
                 <td>${cliente.cpf}</td>
-                <td class="botao"><button title="Editar" onclick="visualizar('cadastro', ${cliente.id})" type="button"><img title="Editar"    src="images/lapis.png" alt="Botão para editar cliente"></button></td>
+                <td class="botao"><button onclick="visualizar('cadastro', ${cliente.id})" type="button"><img title="Editar"    src="images/lapis.png" alt="Botão para editar cliente"></button></td>
                 <td class="botao"><button onclick="perguntaConfirmaExclusao( ${cliente.id})" type="button"><img title="Excluir" src="images/lixeira-de-reciclagem.png" alt="Botão para excluir cliente"></button></td>
+                <td class="botao"><button onclick="( ${cliente.id})" type="button"><img title="Consultar" src="images/lista-de-controle.png" alt="Botão para consultar transações do cliente"></button></td>
             </tr>`
         }).join('')
     }
 }
+
 
 function inserirCliente(nome, cpf){
     const id = listaCliente.ultimoIdGerado +1;
