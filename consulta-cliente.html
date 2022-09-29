@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/cravoecanela.png" type="image/x-icon">
     <link rel="stylesheet" href="style/consulta-cliente.css">
-    <title>Cravo&Canela</title>
+    <link rel="shortcut icon" href="images/cravoecanela.png" type="image/x-icon">
+    <script src="script/consulta-cliente.js"></script>
+    <script src="script/cadastro-cliente.js"></script>
+    <title>Cravo&Canela - Clientes</title>
 </head>
-<body>
+<body page="lista">
     <header>
         <div>
             <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela">
         </div>
-        <!-- <div id="div-busca">
-            <input type="text" id="txt-busca" placeholder="Buscar cliente por CPF"/>
-            <button onclick="" id="btn-busca" type="button"><img src="images/pesquisa-de-lupa.png" id="btn-busca" alt="Buscar"/></button>              
-        </div> -->
         <ul>
             <li>
-              <a href="cadastro-cliente.html" target="_blank">               
+              <a href="cadastro-cliente.html">               
                 <img title="Cadastrar Novo Cliente" class="icones" src="images/adicionar-pessoas.png" alt="ícone de pessoa com sinal de mais, que permite adicionar mais clientes"></a>
-            </li>
-            <li>
-                <a class="icones" href="consulta-cliente.html" target="_blank">
-                <img title="Consultar Clientes" src="images/listar-pessoas.png" alt="ícone de grupo de pessoas que direciona para a página de consulta de clientes"></a>
             </li>
             <li>
                 <a class="icones" href="consulta-transacao.html" target="_blank">
@@ -33,52 +27,177 @@
         </ul>
     </header>
     <main>
-        <section class="lista-cliente">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">CPF</th>
-                        <th scope="col">Data Nascimento</th>
-                        <th scope="col">Genêro</th>
-                        <th scope="col">Estado Civil</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Telefone</th>
-                        <th scope="col">CEP</th>
-                        <th scope="col">Logradouro</th>
-                        <th scope="col">Número</th>
-                        <th scope="col">Complemento</th>
-                        <th scope="col">Bairro</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Cidade</th>
-                        <th scope="col">País</th>
-                        <th scope="col">Editar</th>
-                        <th scope="col">Excluir</th>
-                      </tr>
-                    </thead>
-                    <tbody id="linha">
-                      <tr>
-                        <td><output id="nome"></output></td>
-                        <td><output id="cpf"></output></td>
-                        <td><output id="dt-nasc"></output></td>
-                        <td><output id="genero"></output>                         
-                        </td> 
-                        <td><output id="estado-civil"></output></td>                        
-                        <td><output id="email"></output></td> 
-                        <td><output id="telefone"></output></td>
-                        <td><output id="cep"></output></td> 
-                        <td><output id="logradouro"></output></td>
-                        <td><output id="numero"></output></td>
-                        <td><output id="complemento"></output></td> 
-                        <td><output id="bairro"></output></td> 
-                        <td><output id="estado"></output></td>
-                        <td><output id="cidade"></output></td> 
-                        <td><output id="pais"></output></td>                                
-                        <td><button onclick="" type="button" ><img title="Editar"    src="images/lapis.png" alt="Botão para editar cliente"></button></td>
-                        <td><button onclick="" type="button" ><img title="Excluir" src="images/lixeira-de-reciclagem.png" alt="Botão para excluir cliente"></button></td>
-                      </tr>
-                  </table>
-        </section>
+        <div id="listaCliente">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th class="botao">Editar</th>
+                        <th class="botao">Excluir</th>
+                        <th class="botao">Transações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaClienteBody"></tbody>   
+            </table>
+        </div>
+        <form id="cadastroCliente">
+            <div>
+                <div><label for="nome">Id:</label></div>
+                <div>
+                    <input type="number" id="id" readonly>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="nome">Nome:</label></div>
+                <div>
+                    <input type="text" id="nome" name="nome" value="" placeholder="Nome Completo" required>
+                </div>
+            </div>
+          
+            <div>
+                <div><label for="cpf">CPF:</label></div>
+                <div>
+                    <input type="text" id="cpf" name="cpf" value="" placeholder="Cadastro de Pessoas Física" required>
+                </div>
+            </div>
+
+            <div>
+                <div><label for="dataNascimento">Data de Nascimento:</label></div>
+                <div>
+                    <input type="text" id="dataNascimento" name="dataNascimento" value="" placeholder="O ano em que nasceu. (Exemplo 01/01/1980)" required>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="genero">Genêro:</label></div>
+                <div>
+                    <select id="genero" name="genero">
+                        <option value="FEMCIS">Mulher Cisgênero</option>
+                        <option value="FEMTRANS">Mulher Transgênero</option>
+                        <option value="MASCIS">Homem Cisgênero</option>
+                        <option value="MASTRANS">Homem Transgênero</option>
+                        <option value="NAOBINARIO">Não Binário</option>
+                        <option value="OUTROS">Outros</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="estadoCivil">Estado Civil:</label></div>
+                <div>
+                    <select id="estadoCivil" name="estadoCivil">
+                        <option value="CASADO">Casado(a)</option>
+                        <option value="SOLTEIRO">Solteiro(a)</option>
+                        <option value="DIVORCIADO">Divorciado(a)</option>
+                        <option value="VIUVO">Viúvo(a)</option>
+                        <option value="UNIAOESTAVEL">União Estável</option>
+                        <option value="OUTROS">Outros</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+           
+            <div>
+                <div><label for="email">E-mail:</label></div>
+                <div>
+                    <input type="email" id="email" name="email" value="" placeholder="example@example.com" required>
+                </div>
+            </div>
+
+            <div>
+                <div><label for="telefone">Telefone principal:</label></div>
+                <div>
+                    <input type="tel" id="telefone" name="telefone" value="" placeholder="DDD + Número de telefone" required>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="profissao">Profissão:</label></div>
+                <div>
+                    <input type="text" id="profissao" name="profissao" value="" placeholder="Profissao" required>
+                </div>
+            </div>
+          
+            <div>
+                <div><label for="cep">CEP:</label></div>
+                <div>
+                    <input type="text" id="cep" name="cep" value="" placeholder="CEP/Código postal" required onblur="pesquisacep(this.value);">
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="tipo">Tipo de Endereço:</label></div>
+                <div>
+                    <select id="tipo" name="tipo">
+                        <option value="RESIDENCIAL">Residencial</option>
+                        <option value="COMERCIAL">Comercial</option>
+                        <option value="OUTROS">Outros</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="logradouro">Logradouro:</label></div>
+                <div>
+                    <input type="text" id="logradouro" name="logradouro" value="" placeholder="Rua" required>
+                </div>
+            </div>
+
+            <div>
+                <div><label for="numero">Número:</label></div>
+                <div>
+                    <input type="text" id="numero" name="numero" value="" placeholder="Número" required>
+                </div>
+            </div>
+            
+            <div>
+                <div><label for="complemento">Complemento:</label></div>
+                <div>
+                    <input type="text" id="complemento" name="complemento" value="" placeholder="Complemento">
+                </div>
+            </div>
+
+            <div>
+                <div><label for="bairro">Bairro:</label></div>
+                <div>
+                    <input type="text" id="bairro" name="bairro" value="" placeholder="Bairro" required>
+                </div>
+            </div> 
+
+            <div>
+                <div><label for="estado">Estado:</label></div>
+                <div>
+                    <input type="text" id="estado" name="estado" value="" placeholder="Estado" required>
+                </div>
+            </div>
+
+            <div>
+                <div><label for="cidade">Cidade:</label></div>
+                <div>
+                    <input type="text" id="cidade" name="cidade" value="" placeholder="Cidade" required>
+                </div>
+            </div>
+
+            <div>
+                <div><label for="pais">País:</label></div>
+                <div>
+                    <input type="text" id="pais" name="pais" value="" placeholder="País" required>
+                </div>
+            </div>
+
+            <div class="form-botao">
+                <div>
+                    <button class="enviar" title="Salvar" onclick="" type="button">Salvar</button>
+                </div>
+                <div>
+                    <button class="enviar"  onclick="" type="button">Cancelar</button>
+                </div>
+            </div>
+        </form>
     </main>
 </body>
 </html>
+
