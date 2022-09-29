@@ -22,7 +22,7 @@ header{
     z-index: 999px;
 }
 
-header div img{
+header>div> img{
     width: 6%;
     margin-left: 200px;
 }
@@ -64,6 +64,9 @@ body {
     background: no-repeat center center fixed  linear-gradient(to top, #c4a96a, 
     #efebdf);
     margin: 100px 200px 100px 200px;
+}
+.listaCliente{
+    margin: 0;
 }
 
 table {
@@ -193,4 +196,143 @@ form .enviar:hover{
     width: 100%;
     color: #fbf4f4;
     background-color: #cbb77b;
+}
+
+@media only screen and (max-width: 1200px) {
+    header div img{
+        width: 12%;
+    }  
+}
+
+@media only screen and (max-width: 1080px) {
+   
+    header div img{
+        width: 10%;
+        margin-left: 5px;
+    }
+    
+    header ul{
+        margin-right: 5px;
+    }
+
+    header ul li {
+        margin: 0 0 5px 0x;
+    }
+
+    main{
+        margin-top: 200px;
+    }
+    
+    body {
+        margin: 10%;
+    }  
+    
+    table {
+        width: 100%;
+    }
+
+    table th, 
+    table td {
+        font-size: 12px;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .botao {
+        width: 30px;
+    }
+    
+    .botao img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    
+    header div img{
+        width: 12%;
+        margin-left: 5px;
+    }
+
+    header ul{
+        margin-right: 5px;
+    }
+
+    header ul li {
+        margin: 0 0 5px 0x;
+    }
+
+    main{
+        margin-top: 200px;
+    }
+    
+    body {
+        margin: 10%;
+    }  
+    
+    table {
+        width: 100%;
+    }
+
+    table th, 
+    table td {
+        font-size: 12px;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .botao {
+        width: 30px;
+    }
+    
+    .botao img {
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+ 
+    header div img{
+        width: 25%;
+        margin-left: 10px;
+    }
+    
+    header ul{
+        margin-right: 10px;
+    }
+    
+    header ul li {
+        margin: 0 0 10px 0x;
+    }
+
+    main{
+        margin-top: 100px;
+    }
+    
+    body {
+        margin: 30px;
+    }  
+    
+    table {
+        width: auto;
+    }
+
+    table th, 
+    table td {
+        font-size: 10px;
+        padding: 5px 5px;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .botao {
+        width: 30px;
+    }
+    
+    .botao img {
+        width: 50%;
+    }
+
 }
