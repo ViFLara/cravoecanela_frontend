@@ -44,7 +44,8 @@
   ---  
   ## 🎨 Layout
   
-  O layout da aplicação está disponível no Figma:
+  O layout da aplicação está disponível no Figma: 
+  <br>
   <a href="https://www.figma.com/file/vmf2kgtoL704A2wbphT5mb/PerformAcao?node-id=0%3A1">
     <img alt="Made by PerformAção" src="https://img.shields.io/badge/Acessar%20Layout-Figma-yellow">
   </a>
@@ -52,7 +53,7 @@
   
   ---
   
-  ## 🚀 Projeto
+  ## 📝 Projeto
   
   Este projeto é divido em dois repositórios:
  1. Backend - <a href="https://github.com/ViFLara/cravoecanela_backend">cravoecanela_backend</a>
@@ -73,10 +74,14 @@
         permite listar todas as transações contratadas pelo cliente
 
 
+ ### Modelagem para criação do banco de dados
+
+# <h1 align="center"> ![tabela1](https://user-images.githubusercontent.com/82177551/193124764-73615a41-88a0-4eea-bd9a-69d762643c1b.png)</h1>
+# <h1 align="center">![tabela](https://user-images.githubusercontent.com/82177551/193124771-8fc3009d-b000-492d-8fb8-39291b150e53.png)</h1>
+
  ### Pré-requisitos para o Frontend
   Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-  [Git](https://git-scm.com) e um ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
- 
+  [Git](https://git-scm.com) e um ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) 
  ---
  
 ## 🛠 Tecnologias
@@ -101,12 +106,17 @@
   
   
 ---  
-## 👨‍💻 Contribuidores
+## 👨‍💻 Contribuidores 
+
+Frontend
 
 | [<img src="https://avatars.githubusercontent.com/u/82177551?s=96&v=4" width=115><br><sub>Lais Manieri</sub>](https://github.com/laismanieri) |  [<img src="https://avatars.githubusercontent.com/u/60903424?v=4" width=115><br><sub>Nara Gumarães</sub>](https://github.com/NaraGuimma)|
 | :---: | :---: |
 
-  ---
+Backend
+
+| [<img src="https://avatars.githubusercontent.com/u/89219239?v=4" width=115><br><sub>Priscila Tuppy</sub>](https://github.com/PriscilaTuppy) |  [<img src="https://avatars.githubusercontent.com/u/46038257?v=4" width=115><br><sub>Viviane Ferreira Lara</sub>](https://github.com/ViFLara)|
+| :---: | :---: |
   
 
 
