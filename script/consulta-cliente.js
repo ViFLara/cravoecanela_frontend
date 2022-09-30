@@ -113,6 +113,7 @@ function excluirCliente(nome, cpf){
 function perguntaConfirmaExclusao(id){
     if(confirm('Quer realizar a exclusão do cliente ' + id + ' ?')){
         excluirCliente(id)
+        criaTabela()
     } 
 }
 
