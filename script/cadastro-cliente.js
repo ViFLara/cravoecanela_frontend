@@ -108,18 +108,20 @@ document
         method: "POST",
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(dados),
+        body: JSON.stringify(dados) ,
       }
-    );
-    let data;
-    console.log(data);
-    event.preventDefault();
-    if (response.status !== 200) {
+    ).then(response => {
+      if(response.status != 201){
+        alert("Dados inválidos");
+      }else {
+        alert("Cadastro feito com sucesso");
+        window.location = "main.html";
+      }
+    }).catch(erro => {
       alert("Dados inválidos");
-    } else {
-      alert("Cadastro feito com sucesso");
-      window.location = "main.html";
-    }
+      return erro;
+    });
+   
   });
