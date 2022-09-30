@@ -4,53 +4,15 @@ document
     event.preventDefault();
     const email = document.getElementById("login-email").value;
     const senha = document.getElementById("password").value;
+    console.log(email.senha);
     const dados = {
-      email,
-      senha,
+      email: email,
+      senha: senha,
     };
-    const response = await fetch("localhost:8080/login", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dados),
-    });
+    console.log(JSON.stringify(dados));
+    alert("Seja bem vindo!");
+    window.location = "main.html";
   });
-
-// const response = await fetch("https://chocode.herokuapp.com/entregadores/login", {
-//   method: "POST",
-//   headers: {
-//       "Accept": "application/json",
-//       "Content-Type": "application/json"
-//   },
-//   body: JSON.stringify(dados)
-// })
-// let data;
-// if (response.status !== 200) {
-//   msglogin.textContent = "Dados inválidos";
-// }
-// if (response.ok) {
-//   data = await response.json();
-//   localStorage.setItem("token", data.token);
-//   localStorage.setItem("entregador", data.id);
-//   localStorage.setItem("urlEntregador", data.urlImage);
-//   localStorage.setItem("nomeEntregador", data.nome);
-//   rodar();
-// }
-// const btn = document.querySelector(".submit-btn");
-// const form = document.querySelector(".formLogin");
-// const email = document.querySelector(".login-email");
-// const senha = document.querySelector(".password");
-
-// console.log(email.value, senha.value);
-
-// let submitBtn = document.querySelectorAll(".submit-btn");
-// for (const link of submitBtn) {
-//   link.addEventListener("click", function () {
-//     CloseAllModal();
-//   });
-// }
 
 window.addEventListener("load", function () {
   CloseAllModal();

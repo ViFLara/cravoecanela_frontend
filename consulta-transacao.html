@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/consulta-cliente.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/consulta-cliente.css" />
     <script src="script/consulta-cliente.js"></script>
-    <link rel="shortcut icon" href="images/cravoecanela.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/cravoecanela.png"
+      type="image/x-icon"
+    />
     <title>Cravo&Canela - Transações</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela">
-        </div>
-        <ul>
-            <li>
-              <a href="cadastro-cliente.html">               
-                <img title="Cadastrar Novo Cliente" class="icones" src="images/adicionar-pessoas.png" alt="ícone de pessoa com sinal de mais, que permite adicionar mais clientes"></a>
-            </li>
-            <li>
-                <a class="icones" href="consulta-cliente.html" target="_blank">
-                <img title="Consultar Clientes" src="images/listar-pessoas.png" alt="ícone de grupo de pessoas que direciona para a página de consulta de clientes"></a>
-            </li>
-        </ul>
+      <div>
+        <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela" />
+      </div>
+      <ul>
+        <li>
+          <a href="cadastro-cliente.html">
+            <img
+              title="Cadastrar Novo Cliente"
+              class="icones"
+              src="images/adicionar-pessoas.png"
+              alt="ícone de pessoa com sinal de mais, que permite adicionar mais clientes"
+          /></a>
+        </li>
+        <li>
+          <a class="icones" href="consulta-cliente.html" target="_blank">
+            <img
+              title="Consultar Clientes"
+              src="images/listar-pessoas.png"
+              alt="ícone de grupo de pessoas que direciona para a página de consulta de clientes"
+          /></a>
+        </li>
+      </ul>
     </header>
     <main>
-
+      <div id="listaTransacoes">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Data</th>
+              <th>Servico</th>
+            </tr>
+          </thead>
+          <tbody id="listaTransacoesBody"></tbody>
+        </table>
+      </div>
     </main>
-</body>
+  </body>
 </html>
