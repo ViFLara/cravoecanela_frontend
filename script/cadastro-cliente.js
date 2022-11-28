@@ -41,7 +41,7 @@
        telefone: telefone,
      };
      const response = await fetch(
-       "http://localhost:8084/cliente",
+       "https://fiq9i0dhe2.execute-api.us-east-1.amazonaws.com/clientes/",
        {
          method: "POST",
          headers: {
