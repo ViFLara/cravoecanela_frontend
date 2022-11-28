@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/consulta-cliente.css">
-    <link rel="shortcut icon" href="images/cravoecanela.png" type="image/x-icon">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style/consulta-cliente.css"/>
+    <link rel="shortcut icon" href="images/cadastro.png" type="image/x-icon"/>
     <script src="script/consulta-cliente.js"></script>
     <script src="script/cadastro-cliente.js"></script>
     <title>Cravo&Canela - Clientes</title>
@@ -13,7 +13,7 @@
 <body page="lista">
     <header>
         <div>
-                <img src="images/logo-cravoecanela.png" alt="Logo CravoeCanela"
+            <img src="images/cadastro.png" alt="Logo CravoeCanela"
               />
         </div>
         <ul>
@@ -22,8 +22,7 @@
                 <img title="Cadastrar Novo Cliente" class="icones" src="images/adicionar-pessoas.png" alt="ícone de pessoa com sinal de mais, que permite adicionar mais clientes"></a>
             </li>
             <li>
-                <a class="icones" href="consulta-transacao.html" target="_blank">
-                <img  title="Consultar Transações" src="images/lista-de-controle.png" alt="ícone de checklist de compras que direciona para a pagina para consulta das transações dos clientes"></a>
+                <a class="icones" href="consulta-cliente.html" target="_blank"><img title="Consultar Clientes"             src="images/listar-pessoas.png" alt="ícone de grupo de pessoas que direciona para a página de consulta de clientes"></a>
             </li>
         </ul>
     </header>
@@ -37,7 +36,6 @@
                         <th>CPF</th>
                         <th class="botao">Editar</th>
                         <th class="botao">Excluir</th>
-                        <th class="botao">Transações</th>
                     </tr>
                 </thead>
                 <tbody id="listaClienteBody"></tbody>   
@@ -121,74 +119,6 @@
                     <input type="text" id="profissao" name="profissao" value="" placeholder="Profissao" required>
                 </div>
             </div>
-          
-            <div>
-                <div><label for="cep">CEP:</label></div>
-                <div>
-                    <input type="text" id="cep" name="cep" value="" placeholder="CEP/Código postal" required onblur="pesquisacep(this.value);">
-                </div>
-            </div>
-            
-            <div>
-                <div><label for="tipo">Tipo de Endereço:</label></div>
-                <div>
-                    <select id="tipo" name="tipo">
-                        <option value="RESIDENCIAL">Residencial</option>
-                        <option value="COMERCIAL">Comercial</option>
-                        <option value="OUTROS">Outros</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div>
-                <div><label for="logradouro">Logradouro:</label></div>
-                <div>
-                    <input type="text" id="logradouro" name="logradouro" value="" placeholder="Rua" required>
-                </div>
-            </div>
-
-            <div>
-                <div><label for="numero">Número:</label></div>
-                <div>
-                    <input type="text" id="numero" name="numero" value="" placeholder="Número" required>
-                </div>
-            </div>
-            
-            <div>
-                <div><label for="complemento">Complemento:</label></div>
-                <div>
-                    <input type="text" id="complemento" name="complemento" value="" placeholder="Complemento">
-                </div>
-            </div>
-
-            <div>
-                <div><label for="bairro">Bairro:</label></div>
-                <div>
-                    <input type="text" id="bairro" name="bairro" value="" placeholder="Bairro" required>
-                </div>
-            </div> 
-
-            <div>
-                <div><label for="estado">Estado:</label></div>
-                <div>
-                    <input type="text" id="estado" name="estado" value="" placeholder="Estado" required>
-                </div>
-            </div>
-
-            <div>
-                <div><label for="cidade">Cidade:</label></div>
-                <div>
-                    <input type="text" id="cidade" name="cidade" value="" placeholder="Cidade" required>
-                </div>
-            </div>
-
-            <div>
-                <div><label for="pais">País:</label></div>
-                <div>
-                    <input type="text" id="pais" name="pais" value="" placeholder="País" required>
-                </div>
-            </div>
-
             <div class="form-botao">
                 <div>
                     <button class="enviar" title="Salvar" onclick="" type="button">Salvar</button>
